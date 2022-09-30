@@ -1,0 +1,72 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/morgan-ui/src",
+  "prefix": "custom-ui",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/morgan-ui"],
+      "options": {
+        "project": "libs/morgan-ui/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/morgan-ui/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/morgan-ui/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/morgan-ui"],
+      "options": {
+        "jestConfig": "libs/morgan-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/morgan-ui/**/*.ts",
+          "libs/morgan-ui/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "styles": ["node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"],
+        "port": 4400,
+        "configDir": "libs/morgan-ui/.storybook",
+        "browserTarget": "morgan-ui:build-storybook",
+        "compodoc": true
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/morgan-ui",
+        "configDir": "libs/morgan-ui/.storybook",
+        "browserTarget": "morgan-ui:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
