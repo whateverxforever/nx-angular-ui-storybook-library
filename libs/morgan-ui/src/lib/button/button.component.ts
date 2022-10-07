@@ -6,9 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-
-  @Input() label= 'label';
+  @Input() label = 'label';
   @Input() disabled = false;
   @Input() color: 'primary' | 'accent' | 'warn' = 'primary';
-
 }

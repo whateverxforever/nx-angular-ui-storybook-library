@@ -21,7 +21,37 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "generateProps",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "({\n  label = 'Button',\n  color = 'primary',\n  disabled = false,\n}: {\n  label?: string;\n  color?: 'primary' | 'accent' | 'warn';\n  disabled?: boolean;\n} = {}) => {\n  return {\n    label,\n    color,\n    disabled,\n  };\n}"
+            },
+            {
+                "name": "Icon",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
@@ -77,7 +107,37 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
                     "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "generateProps",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "({\n  label = 'Button',\n  color = 'primary',\n  disabled = false,\n}: {\n  label?: string;\n  color?: 'primary' | 'accent' | 'warn';\n  disabled?: boolean;\n} = {}) => {\n  return {\n    label,\n    color,\n    disabled,\n  };\n}"
+                },
+                {
+                    "name": "Icon",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
@@ -142,7 +202,37 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "generateProps",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/morgan-ui/src/lib/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
